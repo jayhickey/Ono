@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5F48D5D1C3886C300E112C6 /* Ono.h in Headers */ = {isa = PBXBuildFile; fileRef = E5F48D5C1C3886C300E112C6 /* Ono.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5F48D621C3886D400E112C6 /* ONOXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = F82D39891AA61A7700DAC057 /* ONOXMLDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5F48D631C3886DB00E112C6 /* ONOXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F82D398A1AA61A7700DAC057 /* ONOXMLDocument.m */; };
+		E5F48D661C38871300E112C6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F82D39931AA61A9600DAC057 /* libxml2.dylib */; };
 		F82D395A1AA6199E00DAC057 /* Ono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82D394E1AA6199E00DAC057 /* Ono.framework */; };
 		F82D397B1AA61A0B00DAC057 /* Ono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82D39701AA61A0B00DAC057 /* Ono.framework */; };
 		F82D398B1AA61A7700DAC057 /* ONOXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = F82D39891AA61A7700DAC057 /* ONOXMLDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -61,6 +65,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E5F48D5A1C3886C300E112C6 /* Ono.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ono.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5F48D5C1C3886C300E112C6 /* Ono.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ono.h; sourceTree = "<group>"; };
+		E5F48D5E1C3886C300E112C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5F48D641C3886ED00E112C6 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.1.sdk/usr/lib/libxml2.tbd; sourceTree = DEVELOPER_DIR; };
 		F82D394E1AA6199E00DAC057 /* Ono.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ono.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82D39521AA6199E00DAC057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Source/Info.plist; sourceTree = "<group>"; };
 		F82D39591AA6199E00DAC057 /* Ono iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ono iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +95,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E5F48D561C3886C300E112C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5F48D661C38871300E112C6 /* libxml2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F82D394A1AA6199E00DAC057 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -122,12 +138,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5F48D5B1C3886C300E112C6 /* Ono */ = {
+			isa = PBXGroup;
+			children = (
+				E5F48D5C1C3886C300E112C6 /* Ono.h */,
+				E5F48D5E1C3886C300E112C6 /* Info.plist */,
+			);
+			path = Ono;
+			sourceTree = "<group>";
+		};
 		F82D39441AA6199E00DAC057 = {
 			isa = PBXGroup;
 			children = (
+				E5F48D641C3886ED00E112C6 /* libxml2.tbd */,
 				F82D39501AA6199E00DAC057 /* Source */,
 				F82D395D1AA6199E00DAC057 /* Tests */,
 				F82D39971AA61AA600DAC057 /* Vendor */,
+				E5F48D5B1C3886C300E112C6 /* Ono */,
 				F82D394F1AA6199E00DAC057 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -139,6 +166,7 @@
 				F82D39591AA6199E00DAC057 /* Ono iOS Tests.xctest */,
 				F82D39701AA61A0B00DAC057 /* Ono.framework */,
 				F82D397A1AA61A0B00DAC057 /* Ono OS X Tests.xctest */,
+				E5F48D5A1C3886C300E112C6 /* Ono.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -212,6 +240,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		E5F48D571C3886C300E112C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5F48D5D1C3886C300E112C6 /* Ono.h in Headers */,
+				E5F48D621C3886D400E112C6 /* ONOXMLDocument.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F82D394B1AA6199E00DAC057 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -233,6 +270,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		E5F48D591C3886C300E112C6 /* Ono watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5F48D611C3886C300E112C6 /* Build configuration list for PBXNativeTarget "Ono watchOS" */;
+			buildPhases = (
+				E5F48D551C3886C300E112C6 /* Sources */,
+				E5F48D561C3886C300E112C6 /* Frameworks */,
+				E5F48D571C3886C300E112C6 /* Headers */,
+				E5F48D581C3886C300E112C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ono watchOS";
+			productName = Ono;
+			productReference = E5F48D5A1C3886C300E112C6 /* Ono.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		F82D394D1AA6199E00DAC057 /* Ono iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F82D39641AA6199E00DAC057 /* Build configuration list for PBXNativeTarget "Ono iOS" */;
@@ -314,6 +369,9 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Mattt Thompson";
 				TargetAttributes = {
+					E5F48D591C3886C300E112C6 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					F82D394D1AA6199E00DAC057 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -344,11 +402,19 @@
 				F82D39581AA6199E00DAC057 /* Ono iOS Tests */,
 				F82D396F1AA61A0B00DAC057 /* Ono OS X */,
 				F82D39791AA61A0B00DAC057 /* Ono OS X Tests */,
+				E5F48D591C3886C300E112C6 /* Ono watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E5F48D581C3886C300E112C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F82D394C1AA6199E00DAC057 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -390,6 +456,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E5F48D551C3886C300E112C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5F48D631C3886DB00E112C6 /* ONOXMLDocument.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F82D39491AA6199E00DAC057 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -450,6 +524,56 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		E5F48D5F1C3886C300E112C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(SDK_DIR)\"/usr/include/libxml2";
+				INFOPLIST_FILE = Ono/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattt.Ono;
+				PRODUCT_NAME = Ono;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				USER_HEADER_SEARCH_PATHS = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		E5F48D601C3886C300E112C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(SDK_DIR)\"/usr/include/libxml2";
+				INFOPLIST_FILE = Ono/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattt.Ono;
+				PRODUCT_NAME = Ono;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				USER_HEADER_SEARCH_PATHS = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
 		F82D39621AA6199E00DAC057 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -537,6 +661,7 @@
 		F82D39651AA6199E00DAC057 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -557,6 +682,7 @@
 		F82D39661AA6199E00DAC057 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -697,6 +823,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E5F48D611C3886C300E112C6 /* Build configuration list for PBXNativeTarget "Ono watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5F48D5F1C3886C300E112C6 /* Debug */,
+				E5F48D601C3886C300E112C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F82D39481AA6199E00DAC057 /* Build configuration list for PBXProject "Ono" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -731,6 +866,7 @@
 				F82D39851AA61A0B00DAC057 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F82D39861AA61A0B00DAC057 /* Build configuration list for PBXNativeTarget "Ono OS X Tests" */ = {
 			isa = XCConfigurationList;
@@ -739,6 +875,7 @@
 				F82D39881AA61A0B00DAC057 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
